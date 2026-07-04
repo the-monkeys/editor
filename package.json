@@ -1,5 +1,5 @@
 {
-  "name": "@the-monkeys/monkeyseditor",
+  "name": "@themonkeys/monkeyseditor",
   "version": "1.0.0",
   "description": "Monkeys editor — open source block-style WYSIWYG editor with JSON output",
   "main": "dist/monkeyseditor.umd.js",
