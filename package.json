@@ -1,16 +1,15 @@
 {
-  "name": "@editorjs/editorjs",
-  "version": "2.31.6",
-  "description": "Editor.js — open source block-style WYSIWYG editor with JSON output",
-  "main": "dist/editorjs.umd.js",
-  "module": "dist/editorjs.mjs",
+  "name": "@the-monkeys/monkeyseditor",
+  "version": "1.0.0",
+  "description": "Monkeys editor — open source block-style WYSIWYG editor with JSON output",
+  "main": "dist/monkeyseditor.umd.js",
+  "module": "dist/monkeyseditor.mjs",
   "types": "./types/index.d.ts",
   "keywords": [
-    "codex editor",
+    "monkeys editor",
     "text editor",
     "editor",
-    "editor.js",
-    "editorjs",
+    "The monkeys editor",
     "wysiwyg"
   ],
   "scripts": {
@@ -24,11 +23,11 @@
     "test:e2e": "yarn build:test && cypress run",
     "test:e2e:open": "yarn build:test && cypress open"
   },
-  "author": "CodeX",
+  "author": "The Monkeys",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codex-team/editor.js.git"
+    "url": "https://github.com/the-monkeys/editor.git"
   },
   "devDependencies": {
     "@babel/register": "^7.21.0",
@@ -63,10 +62,6 @@
     "typescript": "5.0.3",
     "vite": "^4.2.1",
     "vite-plugin-css-injected-by-js": "^3.1.0"
-  },
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/editorjs"
   },
   "dependencies": {
     "@editorjs/caret": "^1.0.1",
