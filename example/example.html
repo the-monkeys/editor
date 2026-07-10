@@ -14,14 +14,14 @@
       <a class="ce-example__header-logo" href="https://codex.so/editor">Editor.js 🤩🧦🤨</a>
 
       <div class="ce-example__header-menu">
-        <a href="https://github.com/editor-js" target="_blank">Plugins</a>
-        <a href="https://editorjs.io/usage" target="_blank">Usage</a>
-        <a href="https://editorjs.io/configuration" target="_blank">Configuration</a>
-        <a href="https://editorjs.io/creating-a-block-tool" target="_blank">API</a>
+        <a href="https://github.com/the-monkeys" target="_blank">Plugins</a>
+        <a href="https://monkeyseditor.io/usage" target="_blank">Usage</a>
+        <a href="https://monkeyseditor.io/configuration" target="_blank">Configuration</a>
+        <a href="https://monkeyseditor.io/creating-a-block-tool" target="_blank">API</a>
       </div>
     </div>
     <div class="ce-example__content _ce-example__content--small">
-      <div id="editorjs"></div>
+      <div id="monkeyseditor"></div>
 
       <div class="ce-example__button" id="saveButton">
         editor.save()
@@ -53,7 +53,7 @@
    Also you can load each Tool from CDN or use NPM/Yarn packages.
 
    Read more at Tools Connection doc:
-   https://editorjs.io/getting-started#tools-connection
+   https://monkeyseditor.io/getting-started#tools-connection
    -->
   <script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script><!-- Header -->
   <script src="https://cdn.jsdelivr.net/npm/@editorjs/simple-image@latest"></script><!-- Image -->
@@ -71,7 +71,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@editorjs/inline-code@latest"></script><!-- Inline Code -->
 
   <!-- Load Editor.js's Core -->
-  <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@themonkeys/monkeys-editor@latest"></script>
 
   <!-- Initialization -->
   <script>
@@ -88,7 +88,7 @@
       /**
        * Wrapper of Editor
        */
-      holder: 'editorjs',
+      holder: 'monkeyseditor',
 
       /**
        * Common Inline Toolbar settings
@@ -228,7 +228,7 @@
           {
             type : 'paragraph',
             data : {
-              text : `There are dozens of <a href="https://github.com/editor-js">ready-to-use Blocks</a> and the <a href="https://editorjs.io/creating-a-block-tool">simple API</a> for creation any Block you need. For example, you can implement Blocks for Tweets, Instagram posts, surveys and polls, CTA-buttons and even games.`
+              text : `There are dozens of <a href="https://github.com/the-monkeys">ready-to-use Blocks</a> and the <a href="https://monkeyseditor.io/creating-a-block-tool">simple API</a> for creation any Block you need. For example, you can implement Blocks for Tweets, Instagram posts, surveys and polls, CTA-buttons and even games.`
             }
           },
           {
