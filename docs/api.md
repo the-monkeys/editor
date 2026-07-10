@@ -1,4 +1,4 @@
-# Editor.js API
+# MonkeysEditor API
 
 ---
 Most actual API described by [this interface](../types/api/index.d.ts).
@@ -8,7 +8,7 @@ Most actual API described by [this interface](../types/api/index.d.ts).
 
 ---
 
-Tools have access to the public methods provided by Editor.js API Module. Plugin and Tune Developers
+Tools have access to the public methods provided by MonkeysEditor API Module. Plugin and Tune Developers
 can use Editor\`s API as they want.
 
 ## Block API
@@ -85,7 +85,7 @@ use 'move' instead)
 
 `clean(taintString, config)` - method uses HTMLJanitor to clean taint string.
 
-Editor.js provides basic config without attributes, but you can inherit by passing your own config.
+MonkeysEditor provides basic config without attributes, but you can inherit by passing your own config.
 
 If Tool enables inline-tools, we get it's sanitizing rules and merge with your passed custom rules.
 
@@ -187,13 +187,13 @@ Check out [`codex-notifier` package page](https://github.com/codex-team/js-notif
 
 ### Destroy API
 
-If there are necessity to remove Editor.js instance from the page you can use `destroy()` method.
+If there are necessity to remove MonkeysEditor instance from the page you can use `destroy()` method.
 
 It makes following steps:
 
 1. Clear the holder element by setting it\`s innerHTML to empty string
 
-2. Remove all event listeners related to Editor.js
+2. Remove all event listeners related to MonkeysEditor
 
 3. Delete all properties from instance object and set it\`s prototype to `null`
 
