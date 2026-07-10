@@ -1,6 +1,6 @@
 # Installation Guide
 
-There are few steps to run Editor.js on your site.
+There are few steps to run MonkeysEditor on your site.
 
 1. [Load Editor's core](#load-editors-core)
 2. [Load Tools](#load-tools)
@@ -8,7 +8,7 @@ There are few steps to run Editor.js on your site.
 
 ## Load Editor's core
 
-Firstly you need to get Editor.js itself. It is a [minified script](../dist/editor.js) with minimal available
+Firstly you need to get MonkeysEditor itself. It is a [minified script](../dist/monkeys-editor.umd.js) with minimal available
 
 Choose the most usable method of getting an Editor for you.
 
@@ -21,20 +21,20 @@ Choose the most usable method of getting an Editor for you.
 Install the package via NPM or Yarn
 
 ```shell
-npm i @editorjs/editorjs
+npm i @themonkeys/monkeys-editor
 ```
 
 Include module at your application
 
 ```javascript
-import EditorJS from '@editorjs/editorjs';
+import EditorJS from '@themonkeys/monkeys-editor';
 ```
 
 ### Use from CDN
 
-You can load specific version of package from [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@editorjs/editorjs).
+You can load specific version of package from [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@themonkeys/monkeys-editor).
 
-`https://cdn.jsdelivr.net/npm/@editorjs/editorjs@2.10.0`
+`https://cdn.jsdelivr.net/npm/@themonkeys/monkeys-editor@2.10.0`
 
 Then require this script.
 
@@ -44,21 +44,21 @@ Then require this script.
 
 ### Save sources to project
 
-Copy [editor.js](../dist/editor.js) file to your project and load it.
+Copy [monkeys-editor.js](../dist/monkeys-editor.umd.js) file to your project and load it.
 
 ```html
-<script src="editor.js"></script>
+<script src="monkeys-editor.umd.js"></script>
 ```
 
 ## Load Tools
 
-Each Block at the Editor.js represented by [Tools](tools.md). There are simple external scripts with their own logic. You'll probably want to use several Block Tools that should be connected.
+Each Block at the MonkeysEditor represented by [Tools](tools.md). There are simple external scripts with their own logic. You'll probably want to use several Block Tools that should be connected.
 
-For example, check out our [Header](https://github.com/editor-js/header) Tool that represents heading blocks.
+For example, check out our [Header](https://github.com/the-monkeys/header) Tool that represents heading blocks.
 
 You can install the Header Tool via the same ways as an Editor (Node.js, CDN, local file).
 
-Check [Editor.js's community](https://github.com/editor-js/) to see Tools examples.
+Check [MonkeysEditor's community](https://github.com/the-monkeys/) to see Tools examples.
 
 **Example:** use Header from CDN
 
@@ -68,7 +68,7 @@ Check [Editor.js's community](https://github.com/editor-js/) to see Tools exampl
 
 ## Create Editor instance
 
-Create an instance of Editor.js and pass [Configuration Object](../src/types-internal/editor-config.ts).
+Create an instance of MonkeysEditor and pass [Configuration Object](../src/types-internal/editor-config.ts).
 At least the `holder` option is required.
 
 ```html
@@ -115,7 +115,7 @@ var editor = new EditorJS({
 
 ## Ready callback
 
-Editor.js needs a bit of time to initialize. It is an asynchronous action so it won't block execution of your main script.
+MonkeysEditor needs a bit of time to initialize. It is an asynchronous action so it won't block execution of your main script.
 
 If you need to know when the editor instance is ready you can use one of the following ways:
 
@@ -130,7 +130,7 @@ var editor = new EditorJS({
    /**
     * onReady callback
     */
-   onReady: () => {console.log('Editor.js is ready to work!')}
+   onReady: () => {console.log('MonkeysEditor is ready to work!')}
 });
 ```
 
@@ -148,7 +148,7 @@ editor.isReady
     /** Do anything you need after editor initialization */
   })
   .catch((reason) => {
-    console.log(`Editor.js initialization failed because of ${reason}`)
+    console.log(`MonkeysEditor initialization failed because of ${reason}`)
   });
 ```
 
@@ -161,7 +161,7 @@ try {
   await editor.isReady;
   /** Do anything you need after editor initialization */
 } catch (reason) {
-  console.log(`Editor.js initialization failed because of ${reason}`)
+  console.log(`MonkeysEditor initialization failed because of ${reason}`)
 }
 ```
 
@@ -179,7 +179,7 @@ editor.saver.save()
 
 ## Features
 
-Also, Editor.js provides useful methods to work with Editor's state.
+Also, MonkeysEditor provides useful methods to work with Editor's state.
 
 ```javascript
 var editor = new EditorJS({
@@ -188,7 +188,7 @@ var editor = new EditorJS({
    /**
     * onReady callback
     */
-   onReady: () => {console.log('Editor.js is ready to work!')},
+   onReady: () => {console.log('MonkeysEditor is ready to work!')},
 
    /**
     * onChange callback

@@ -1,9 +1,9 @@
 {
-  "name": "@themonkeys/monkeyseditor",
+  "name": "@themonkeys/monkeys-editor",
   "version": "1.0.0",
   "description": "Monkeys editor — open source block-style WYSIWYG editor with JSON output",
-  "main": "dist/monkeyseditor.umd.js",
-  "module": "dist/monkeyseditor.mjs",
+  "main": "dist/monkeys-editor.umd.js",
+  "module": "dist/monkeys-editor.mjs",
   "types": "./types/index.d.ts",
   "keywords": [
     "monkeys editor",

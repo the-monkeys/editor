@@ -19,8 +19,8 @@ export default {
     copyPublicDir: false,
     lib: {
       entry: path.resolve(__dirname, 'src', 'codex.ts'),
-      name: 'MonkeysEditor',
-      fileName: 'monkeyseditor',
+      name: 'monkeys-editor',
+      fileName: 'monkeys-editor',
     },
     rollupOptions: {
       plugins: [
