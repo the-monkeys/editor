@@ -867,15 +867,12 @@ export default class Block extends EventsDispatcher<BlockEvents> {
    *   - undefined — manual triggering of block.dispatchChange()
    */
   private readonly didMutated = (mutationsOrInputEvent: MutationRecord[] | InputEvent = undefined): void => {
+    const isManuallyDispatched = mutationsOrInputEvent === undefined;
+    const isInputEventHandler = mutationsOrInputEvent instanceof InputEvent;
+
     /**
      * Block API have dispatchChange() method. In this case, mutations list will be undefined.
      */
-    const isManuallyDispatched = mutationsOrInputEvent === undefined;
-
-    /**
-     * True if didMutated has been called as "input" event handler
-     */
-    const isInputEventHandler = mutationsOrInputEvent instanceof InputEvent;
 
     /**
      * If tool updates its own root element, we need to renew it in our memory

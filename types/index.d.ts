@@ -29,6 +29,7 @@ import {
   I18n,
   Ui,
   Tools,
+  History,
 } from './api';
 
 import { OutputData } from './data-formats';
@@ -120,6 +121,7 @@ export interface API {
   i18n: I18n;
   readOnly: ReadOnly;
   ui: Ui;
+  history: History;
 }
 
 /**
@@ -139,6 +141,7 @@ declare class EditorJS {
   public toolbar: Toolbar;
   public inlineToolbar: InlineToolbar;
   public readOnly: ReadOnly;
+  public history: History;
   constructor(configuration?: EditorConfig|string);
 
   /**

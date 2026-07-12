@@ -115,4 +115,14 @@ export interface EditorConfig {
      */
     nonce?: string;
   }
+
+  /**
+   * History (undo/redo) configuration
+   */
+  history?: {
+    /**
+     * Maximum number of entries to keep in the undo/redo stack
+     */
+    stackLimit?: number;
+  };
 }
