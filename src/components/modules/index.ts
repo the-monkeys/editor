@@ -16,6 +16,7 @@ import StylesAPI from './api/styles';
 import ToolbarAPI from './api/toolbar';
 import TooltipAPI from './api/tooltip';
 import UiAPI from './api/ui';
+import HistoryAPI from './api/history';
 
 /** ./toolbar */
 import BlockSettings from './toolbar/blockSettings';
@@ -37,6 +38,7 @@ import Renderer from './renderer';
 import Saver from './saver';
 import Tools from './tools';
 import UI from './ui';
+import History from './history';
 
 export default {
   // API Modules
@@ -57,6 +59,7 @@ export default {
   ToolbarAPI,
   TooltipAPI,
   UiAPI,
+  HistoryAPI,
 
   // Toolbar Modules
   BlockSettings,
@@ -78,4 +81,5 @@ export default {
   Saver,
   Tools,
   UI,
+  History,
 };

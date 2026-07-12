@@ -29,7 +29,7 @@ Cypress.Commands.add('createEditor', (editorConfig: EditorConfig = {}): Chainabl
 
         window.document.body.appendChild(editorContainer);
 
-        const editorInstance: EditorJS = new window.EditorJS(editorConfig);
+        const editorInstance: EditorJS = new window.MonkeysEditor(editorConfig);
 
         editorInstance.isReady.then(() => {
           resolve(editorInstance);

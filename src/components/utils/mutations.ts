@@ -15,9 +15,28 @@ export function isMutationBelongsToElement(mutationRecord: MutationRecord, eleme
   }
 
   /**
+   * For characterData mutations, use block-boundary check to prevent cross-block matching.
+   * This handles the case where toolRenderedElement may reference a parent/shared element.
+   */
+  if (type === 'characterData') {
+    const targetParent = target.parentElement as HTMLElement | null;
+
+    if (targetParent !== null) {
+      const targetBlock = targetParent.closest('.ce-block');
+      const elementBlock = element.closest('.ce-block');
+
+      if (targetBlock !== null && elementBlock !== null) {
+        return targetBlock === elementBlock;
+      }
+    }
+  }
+
+  const containsResult = element.contains(target);
+
+  /**
    * Covers all types of mutations happened to the element or it's descendants with the only one exception - removing/adding the element itself;
    */
-  if (element.contains(target)) {
+  if (containsResult) {
     return true;
   }
 

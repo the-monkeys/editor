@@ -12,7 +12,7 @@ export default defineConfig({
   videosFolder: 'test/cypress/videos',
   e2e: {
     // We've imported your old cypress plugins here.
-    // You may want to clean this up later by importing these.
+    // You may want to clean this up later by importing new cypress plugins here.
     setupNodeEvents(on, config) {
       on('file:preprocessor', vitePreprocessor({
         configFile: path.resolve(__dirname, './vite.config.test.js'),
