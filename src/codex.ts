@@ -21,7 +21,7 @@ declare const VERSION: string;
  * @see Editor.js <https://editorjs.io>
  * @author CodeX Team <https://codex.so>
  */
-export default class EditorJS {
+export default class MonkeysEditor {
   /**
    * Promise that resolves when core modules are ready and UI is rendered on the page
    */
