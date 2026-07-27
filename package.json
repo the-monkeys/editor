@@ -1,5 +1,5 @@
 {
-  "name": "monkeys-editor",
+  "name": "@themonkeys/monkeys-editor",
   "version": "1.0.1",
   "description": "Editor.js — Native JS, based on API and Open Source",
   "main": "dist/editorjs.umd.js",
